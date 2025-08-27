@@ -17,7 +17,7 @@ connectCloudinary();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://docient.netlify.app",
+    origin: ["https://docient.netlify.app", "https://docientadmin.netlify.app"],
     credentials: true,
   })
 );
