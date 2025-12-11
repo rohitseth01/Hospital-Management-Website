@@ -9,7 +9,7 @@ const Footer = () => {
             {/* ----Left section */}
             <div>
                 <img className='mb-5 w-40' src={assets.logo} alt="" />
-                <p className='w-full md:w-2/3 text-gray-600 leading-6 '>Precripto is a smart and efficient Hospital Management System designed to simplify and organize the day-to-day activities of hospitals and clinics. It provides a centralized platform for managing appointments, doctor schedules, patient records, prescriptions, and billing. Patients can easily book appointments, view their medical history, and receive prescriptions online, while doctors can manage their availability and access patient information securely. </p>
+                <p className='w-full md:w-2/3 text-gray-600 leading-6 '>Docient is a smart and efficient Hospital Management System designed to simplify and organize the day-to-day activities of hospitals and clinics. It provides a centralized platform for managing appointments, doctor schedules, patient records, prescriptions, and billing. Patients can easily book appointments, view their medical history, and receive prescriptions online, while doctors can manage their availability and access patient information securely. </p>
             </div>
 
             {/* ----Center section */}
@@ -31,7 +31,7 @@ const Footer = () => {
                 <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-2 text-gray-600'>
                     <li>+1-212-456-7890</li>
-                    <li>prescripto@gmail.com</li>
+                    <li>docient@gmail.com</li>
                 </ul>
             </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
         <div >
             {/* -----Copyright Text */}
             <hr />
-            <p className='py-5 text-sm text-center'>Copyright © 2025 Prescripto - All Right Reserved.</p>
+            <p className='py-5 text-sm text-center'>Copyright © 2025 Docient - All Right Reserved.</p>
         </div>
 
     </div>
