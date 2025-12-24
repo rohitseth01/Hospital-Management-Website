@@ -19,7 +19,7 @@ const DoctorContextProvider = (props) => {
     try {
       const { data } = await axios.get(
         backendUrl + "/api/doctor/appointments",
-        { headers: { dToken }, withCredentials: true }
+        { headers: { dtoken: dToken }, withCredentials: true }
       );
 
       if (data.success) {
@@ -39,7 +39,7 @@ const DoctorContextProvider = (props) => {
       const { data } = await axios.post(
         backendUrl + "/api/doctor/complete-appointment",
         { appointmentId },
-        { headers: { dToken }, withCredentials: true }
+        { headers: { dtoken: dToken }, withCredentials: true }
       );
 
       if (data.success) {
@@ -59,7 +59,7 @@ const DoctorContextProvider = (props) => {
       const { data } = await axios.post(
         backendUrl + "/api/doctor/cancel-appointment",
         { appointmentId },
-        { headers: { dToken }, withCredentials: true }
+        { headers: { dtoken: dToken }, withCredentials: true }
       );
 
       if (data.success) {
@@ -77,7 +77,7 @@ const DoctorContextProvider = (props) => {
   const getDashData = async () => {
     try {
       const { data } = await axios.get(backendUrl + "/api/doctor/dashboard", {
-        headers: { dToken },
+        headers: { dtoken: dToken },
         withCredentials: true,
       });
       if (data.success) {
@@ -95,7 +95,7 @@ const DoctorContextProvider = (props) => {
   const getProfileData = async () => {
     try {
       const { data } = await axios.get(backendUrl + "/api/doctor/profile", {
-        headers: { dToken },
+        headers: { dtoken: dToken },
         withCredentials: true,
       });
       if (data.success) {
